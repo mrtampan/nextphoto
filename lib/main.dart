@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Next Photo',
+      title: 'Dapur Koding',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Next Photo'),
+      home: const MyHomePage(title: 'Dapur Koding'),
     );
   }
 }
@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+<<<<<<< HEAD
       appBar: AppBar(
         title: Text(widget.title),
         actions: [
@@ -59,9 +60,22 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Icons.home))
         ],
       ),
+=======
+      // appBar: AppBar(
+      //   title: Text(widget.title),
+      //   actions: [
+      //     IconButton(
+      //         onPressed: () async {
+      //           await controller.loadUrl('https://nextjsphoto.vercel.app');
+      //           print("hahah");
+      //         },
+      //         icon: const Icon(Icons.home))
+      //   ],
+      // ),
+>>>>>>> 73c6e5fd40502161b8a583da89bce850ae560779
       body: Center(
         child: WebView(
-          initialUrl: 'https://nextjsphoto.vercel.app',
+          initialUrl: 'https://dapurkoding.my.id/',
           javascriptMode: JavascriptMode.unrestricted,
           onWebViewCreated: (controller) {
             this.controller = controller;
