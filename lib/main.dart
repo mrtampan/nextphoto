@@ -48,7 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-<<<<<<< HEAD
       appBar: AppBar(
         title: Text(widget.title),
         actions: [
@@ -60,22 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Icons.home))
         ],
       ),
-=======
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      //   actions: [
-      //     IconButton(
-      //         onPressed: () async {
-      //           await controller.loadUrl('https://nextjsphoto.vercel.app');
-      //           print("hahah");
-      //         },
-      //         icon: const Icon(Icons.home))
-      //   ],
-      // ),
->>>>>>> 73c6e5fd40502161b8a583da89bce850ae560779
       body: Center(
         child: WebView(
-          initialUrl: 'https://dapurkoding.my.id/',
+          initialUrl: 'https://nextjsphoto.vercel.app',
           javascriptMode: JavascriptMode.unrestricted,
           onWebViewCreated: (controller) {
             this.controller = controller;
